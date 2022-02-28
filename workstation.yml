@@ -84,3 +84,5 @@
         src: ./lean-conky-config
         dest: ~/.config/conky/
         mode: 0774
+    - name: running conky command
+      command: ~/.config/conky/lean-conky-config/start.sh
