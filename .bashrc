@@ -115,5 +115,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH=~/devops/bin:$PATH
-bash ~/.config/conky/lean-conky-config/start.sh 
+export PATH="$HOME/devops/bin:$PATH"
+#bash ~/.config/conky/lean-conky-config/start.sh 
