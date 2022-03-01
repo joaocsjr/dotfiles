@@ -94,3 +94,17 @@
       copy:
         src: ./.zshrc
         dest: ~/
+    - name: copy network definition file 
+      copy:
+        src: ansible-net.xml
+        dest: ~/   
+    - name: setup kvm net 
+      become: yes 
+      command: virsh net-define ~/ansible-net.xml
+    - name: start kvm net 
+      become: yes 
+      command: virsh net-start ansible-net
+    - name: set autostart kvm net 
+      become: yes 
+      command: virsh net-autostart ansible-net
+        
