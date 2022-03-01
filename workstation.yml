@@ -86,3 +86,11 @@
         mode: 0774
     - name: running conky command
       command: ~/.config/conky/lean-conky-config/start.sh
+    - name: copy bashrc file
+      copy:
+        src: ./.bashrc
+        dest: ~/
+    - name: copy zshrc
+      copy:
+        src: ./.zshrc
+        dest: ~/
