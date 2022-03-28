@@ -30,9 +30,9 @@
           - tilix
           - mlocate
           - qemu-kvm
-          - libvirt-daemon-system
+          - libvirt
           - libvirt-daemon
-          - virtinst
+          - virt-install
           - bridge-utils
           - libosinfo-bin 
           - jq
