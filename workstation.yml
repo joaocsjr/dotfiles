@@ -78,14 +78,7 @@
         name: jcastro
         groups: "libvirt, libvirt-qemu, libvirt-dnsmasq"
         state: present
-    
-    - name: copy conky config
-      copy:
-        src: ./lean-conky-config
-        dest: ~/.config/conky/
-        mode: 0774
-    - name: running conky command
-      command: ~/.config/conky/lean-conky-config/start.sh
+ 
     - name: copy bashrc file
       copy:
         src: ./.bashrc
